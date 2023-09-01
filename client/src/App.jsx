@@ -6,5 +6,4 @@ function App() {
   const [inputText, setInputText] = useState("");
   const [data, setData] = useState({});
   const [error, setError] = useState(false);
-  const [loading, setLoading] = useState(true);
-  
+  const [loading, setLoading] = useState(true); }
