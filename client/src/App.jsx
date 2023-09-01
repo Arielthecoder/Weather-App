@@ -26,3 +26,10 @@ function App() {
       .catch(() => setError(true))
       .finally(() => setLoading(false));
   }, [cityName, error]);
+
+  const handleSearch = (e) => {
+    if (e.key === "Enter") {
+      setCityName(e.target.value);
+      setInputText("");
+    }
+  };
