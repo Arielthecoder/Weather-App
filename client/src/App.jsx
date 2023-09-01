@@ -1,12 +1,10 @@
 import "./App.css";
+import { useEffect, useState } from "react";
 
 function App() {
-  return (
-    <div>
-      <h1 className="title">Weather App</h1>
-      <Form />
-    </div>
-  );
-};
-
-export default App;
+  const [cityName, setCityName] = useState("Rome");
+  const [inputText, setInputText] = useState("");
+  const [data, setData] = useState({});
+  const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(true);
+  
